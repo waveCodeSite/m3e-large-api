@@ -7,9 +7,9 @@ WORKDIR /app
 # 将当前目录内容复制到容器的/app中
 ADD . /app
 
-RUN pip install --upgrade pip -i https://pypi.tuna.tsinghua.edu.cn/simple
+RUN pip install --upgrade pip
 # 安装程序需要的包
-RUN pip install --no-cache-dir -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+RUN pip install --no-cache-dir -r requirements.txt
 
 # 运行时监听的端口
 EXPOSE 6008

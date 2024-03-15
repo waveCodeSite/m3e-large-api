@@ -1,0 +1,1 @@
+docker build --build-arg ARCH=arm64v8 -t wavecode:m3e-large-api .

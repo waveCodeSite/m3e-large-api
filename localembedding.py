@@ -32,7 +32,7 @@ if torch.cuda.is_available():
     print('本次加载模型的设备为GPU: ', torch.cuda.get_device_name(0))
 else:
     print('本次加载模型的设备为CPU.')
-model = SentenceTransformer('./moka-ai_m3e-large',device=device) 
+model = SentenceTransformer('moka-ai_m3e-large',device=device) 
 
 # 创建一个HTTPBearer实例
 security = HTTPBearer()
